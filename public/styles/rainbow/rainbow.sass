@@ -1,0 +1,23 @@
+.rainbow
+  display: block
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 8001
+  &:after
+    content: ""
+    display: table
+    clear: both
+  &__element
+    float: left
+    height: 2px
+    width: 25%
+    &--first
+      background-color: #afecc3
+    &--second
+      background-color: #84c3c0
+    &--third
+      background-color: #d45a68
+    &--fourth
+      background-color: #ecbf63
