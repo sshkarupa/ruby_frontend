@@ -21,10 +21,10 @@ set :slim, layout_options: { views: 'views/layouts' }
 # Список страниц для автороутинга
 set :pages, %w[index sign_in sign_out fogot]
 
-# UI kit всех используемых элементов
+# Главная страница
 get '/' do
-  @title = 'UI elements'
-  slim :'ui/ui'
+  @title = 'My page title'
+  slim :index
 end
 
 # Ручной роутинг страниц, если нужны дополнительные парамеры: переменные, шаблоны
